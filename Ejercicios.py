@@ -68,8 +68,8 @@ def tamano_lista(lista):
     return len(lista)
 #Retorna el tamaño de la lista y que tipo de datos estan dentro de la lista
 """
-Entradas:
-Salidas
+Entradas: Lista
+Salidas: lista con tamaño, lista con tipo de dato para cada campo de la lista
 """  
 def informacion_lista(lista):
     lista_tipos_dato=[]
@@ -78,8 +78,8 @@ def informacion_lista(lista):
     return [len(lista) , lista_tipos_dato ] 
 #Retornar una lista con los numero negativos  
 """
-Entradas:
-Salidas
+Entradas: Lista
+Salidas: Lista con los números negativos
 """  
 def numeros_negativos(lista):
     lista_negativos=[]
@@ -87,18 +87,33 @@ def numeros_negativos(lista):
         if float(lista[i]) < 0: 
             lista_negativos.append(lista[i])
     return lista_negativos
+
 #realizar una funcion que retorne la posicion de un elemento que pasa por parametro
+"""
+Entradas: Lista
+Salidas: lista de posiciones en donde esté el parametro dado
+""" 
 def posicion_elemento(lista , elemento):
     lista_posiciones = []
     for i in list(range(0,len(lista))):
         if str(lista[i]) == str(elemento): 
             lista_posiciones.append(i)
     return lista_posiciones#[0] #en caso de que sea solo el primer elemento encontrado
+
 #realizar una funcion que agregue al final de archivo frutas una fruta
+"""
+Entradas: Lista , nueva fruta
+Salidas: lista de frutas con la nueva fruta añadida
+""" 
 def frutas(lista , elemento):
     lista.append(elemento)
     return lista
-#Realizar una funcion que cuente el numero de veces que se repite un elemento  
+  
+#Realizar una funcion que cuente el numero de veces que se repite un elemento 
+"""
+Entradas: Lista, elemento
+Salidas: número de veces que se repite el elemento
+"""  
 def repetir(lista , elemento):
     lista_posiciones = []
     for i in list(range(0,len(lista))):
@@ -114,6 +129,10 @@ if __name__ == "__main__":
 
     print("\n")
     print("\n")
+    Todas las funciones que se van a validar serán sobre las listas originales
+    print("\n")
+    print("\n")
+    print("Función que elimina un caracter de la lista")
     print("Ingrese caracter a eliminar de la lista de frutas:")
     caracter = input()
     frutas_sin_caracter = eliminar_un_caracter_de_toda_la_lista(lista_frutas, caracter)
