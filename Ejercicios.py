@@ -129,7 +129,7 @@ if __name__ == "__main__":
 
     print("\n")
     print("\n")
-    Todas las funciones que se van a validar serán sobre las listas originales
+    print("Todas las funciones que se van a validar serán sobre las listas originales")
     print("\n")
     print("\n")
     print("Función que elimina un caracter de la lista")
@@ -137,44 +137,61 @@ if __name__ == "__main__":
     caracter = input()
     frutas_sin_caracter = eliminar_un_caracter_de_toda_la_lista(lista_frutas, caracter)
     print("Lista frutas sin caracter:", frutas_sin_caracter)
-    
+    print("\n")
+    print("Digite cualquier letra y de enter para continuar:")
+    Aux = input()
+  
     print("\n")
     print("\n")
-    print("Se realiza copiado de lista frutas")    
+    print("Se realiza función que copia lista de frutas")    
     copy=copia_lista(lista_frutas)
     print("Lista copiada", copy)
+    print("\n")
+    print("Digite cualquier letra y de enter para continuar:")
+    Aux = input()
     
     print("\n")
     print("\n")
-    print("Se realiza lista de numeros pares")  
+    print("Se realiza función que lista los números pares")  
     lista_numeros_pares = numeros_pares(lista_numeros)
     print("Lista numeros pares:", lista_numeros_pares)
-    
+
     print("\n")
     print("\n")
-    print("Ingrese elemento a eliminar de la lista de frutas:")
+    print("Se realiza función que elimina un elemento de la lista")  
+    print("Ingrese el elemento a eliminar de la lista de frutas:")
     elemento = input()   
     lista_sin_elemento = elimina_elemento_lista(lista_frutas, elemento)
     print("Lista sin elemento:", lista_sin_elemento)
  
     print("\n")
     print("\n")
+    print("Se realiza función que lista las frutas que inician con la letra dada") 
     print("Elije la letra inicial que deben tener la lista de frutas:")
     elemento = input()    
     lista_letra = letra(lista_frutas , elemento)
     print("Lista de frutas con esa letra inicial:", lista_letra)
-    
+    print("\n")
+    print("Digite cualquier letra y de enter para continuar:")
+    Aux = input()
+
     print("\n")
     print("\n")
     print("Función para ver el tamaño de la lista")
     tamano_list = tamano_lista(lista_frutas)
     print("El tamaño de la lista es: ", tamano_list)
+    print("\n")
+    print("Digite cualquier letra y de enter para continuar:")
+    Aux = input()
  
     print("\n")
     print("\n")
     print("Función para ver información de la lista:")
     info_lista = informacion_lista(lista_frutas)
     print("Matriz de información de lista frutas, tamaño y tipos de dato:", info_lista)
+    print("\n")
+    print("Digite cualquier letra y de enter para continuar:")
+    Aux = input()
     
     print("\n")
     print("\n")
@@ -184,6 +201,7 @@ if __name__ == "__main__":
 
     print("\n")
     print("\n")
+    print("Se realiza función obtener las posiciones en las que se encuentra un elemento")
     print("Ingresa un elemento que quieras revisar en que posiciones está en la lista de frutas:")
     elemento = input() 
     posiciones = posicion_elemento(lista_frutas, elemento)
@@ -191,6 +209,7 @@ if __name__ == "__main__":
     
     print("\n")
     print("\n")
+    print("Se realiza función para ingresar un elemento a la lista")
     print("Ingresa un elemento que quieras agregar a la lista de frutas:")
     elemento = input() 
     lista_con_elemento = frutas(lista_frutas, elemento)
@@ -198,6 +217,7 @@ if __name__ == "__main__":
 
     print("\n")
     print("\n")
+    print("Se realiza función que cuenta el número de veces que se repite un elemento en la lista")
     print("Ingresa un elemento que quieras cuantas veces se repite en la lista de numeros:")
     elemento = input()
     numero_repeticiones = repetir(lista_numeros, elemento)
