@@ -10,8 +10,8 @@ numeros.close()
 
 #Realizar una funcion que elimine un caracter de todos los elementos de la lista
 """
-Entradas:
-Salidas
+Entradas: lista , caracter
+Salidas: lista
 """
 def eliminar_un_caracter_de_toda_la_lista(lista , caracter):
     for i in list(range(0,len(lista))):
@@ -19,38 +19,38 @@ def eliminar_un_caracter_de_toda_la_lista(lista , caracter):
     return lista
 #Realizar una funcion que retorne la copia de una funcion que pasa por parametro 
 """
-Entradas:
-Salidas
+Entradas: lista
+Salidas: copia de la lista
 """
 def copia_lista(lista):
     return lista.copy() 
-#Realizar una funcion que retorne una lista de numeros enteros   
+#Realizar una funcion que retorne una lista de numeros numeros pares   
 """
-Entradas:
-Salidas
+Entradas: lista
+Salidas: lista números pares
 """  
 def numeros_pares(lista):
     lista_pares=[]
     for i in list(range(0,len(lista))):
-        if (float(lista[i]) % 2) == 0 and (float(lista[i]) >= 2 or float(lista[i]) <= 2): 
+        if (float(lista[i]) % 2) == 0 and (float(lista[i]) >= 2 or float(lista[i]) <=-2): 
             lista_pares.append(lista[i])
     return lista_pares
 #Realizar una funcion que elimine un elemento de una lista
 """
-Entradas:
-Salidas
+Entradas: Lista frutas, Elemento a eliminar
+Salidas: Lista menos un elemento
 """  
 def elimina_elemento_lista(lista , elemento):
     if elemento in lista:
         lista.remove(elemento)
     else:
-        print("No se eliminó elemento porque no fue encontrado")
+        print("No se eliminó elemento porque no fue encontrado en la lista.")
     return  lista
 
 #Retorna una lista con las palabras iniciales con la letra que pasa por parametro  
 """
-Entradas:
-Salidas
+Entradas: Lista, letra inicial (puedes ser mayúscula o minúscula)
+Salidas: Lista de frutas que inician con la letra dada.
 """  
 def letra(lista , letra):
     lista_palabras=[]
@@ -61,8 +61,8 @@ def letra(lista , letra):
     return lista_palabras
 #Realizar una funcion que retorne el tamaño de una lista   
 """
-Entradas:
-Salidas
+Entradas: Lista
+Salidas: Longitud de la lista
 """   
 def tamano_lista(lista):
     return len(lista)
